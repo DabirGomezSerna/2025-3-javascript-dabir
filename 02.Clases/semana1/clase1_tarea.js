@@ -7,7 +7,7 @@ async function main() {
   // 3.- Pedir operador
   const num1 = Number(await ask("¿Cual es el primer numero?"));
   const num2 = Number(await ask("¿Cual es el segundo numero?"));
-  const operator = await ask("¿Cuál el el operador?");
+  const operator = await ask("¿Cuál el el operador(+,-,*,/)?");
   let result = 0;
 
   switch(operator){
@@ -26,6 +26,9 @@ async function main() {
     case "/":
       result = num1 / num2;
       console.log("La operación es "+num1+" / "+num2+" = "+result);
+      break;
+    default:
+      console.log("Has ingresado un operador no reconocido");
       break;
   }
 }
