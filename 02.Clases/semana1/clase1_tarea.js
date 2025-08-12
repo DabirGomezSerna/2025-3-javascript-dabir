@@ -29,7 +29,6 @@ async function main() {
       break;
     default:
       console.log("Has ingresado un operador no reconocido");
-      break;
   }
 }
 
