@@ -10,6 +10,10 @@ async function main() {
   const operator = await ask("¿Cuál el el operador(+,-,*,/)?");
   let result = 0;
 
+  if(operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/'){
+    console.log("El operador no es valido");
+  }
+
   switch(operator){
     case "+":
       result = num1 + num2;
@@ -24,11 +28,14 @@ async function main() {
       console.log("La operación es "+num1+" * "+num2+" = "+result);
       break;
     case "/":
-      result = num1 / num2;
-      console.log("La operación es "+num1+" / "+num2+" = "+result);
-      break;
+      if(num2 > 0){
+        result = num1 / num2;
+        console.log("La operación es "+num1+" / "+num2+" = "+result);
+        break;
+      }else
+        console.log("El segundo número en una división no puede ser 0");
     default:
-      console.log("Has ingresado un operador no reconocido");
+      console.log("Operación inválida");
   }
 }
 
