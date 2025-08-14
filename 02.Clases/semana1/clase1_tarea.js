@@ -5,8 +5,8 @@ async function main() {
   // 1.- Pedir el primer número
   // 2.- Pedir el segundo número
   // 3.- Pedir operador
-  const num1 = Number(await ask("¿Cual es el primer numero?"));
-  const num2 = Number(await ask("¿Cual es el segundo numero?"));
+  const num1 = Number(await ask("¿Cuál es el primer numero?"));
+  const num2 = Number(await ask("¿Cuál es el segundo numero?"));
   const operator = await ask("¿Cuál el el operador(+,-,*,/)?");
   let result = 0;
 
