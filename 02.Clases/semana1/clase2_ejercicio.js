@@ -16,6 +16,8 @@ async function main() {
     console.log("Eres una mujer");
   else if(age >=18 && genero === "masculino")
     console.log("Eres un hombre");
+  else
+    console.log("No se encontraron resultados");
 }
 
 main();
