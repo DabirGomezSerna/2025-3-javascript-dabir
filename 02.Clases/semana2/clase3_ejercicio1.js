@@ -14,10 +14,12 @@ async function main() {
         "Luigy"
     ];
 
+    console.log("----------Ascending order----------");
     for(let i = 0; i < personas.length; i++){
         saludar(personas[i]);
     }
 
+    console.log("----------Descending order----------");
     for(let j = personas.length-1; j>=0; j--){
         saludar(personas[j]);
     }
