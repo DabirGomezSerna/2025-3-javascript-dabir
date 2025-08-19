@@ -17,6 +17,10 @@ async function main() {
     for(let i = 0; i < personas.length; i++){
         saludar(personas[i]);
     }
+
+    for(let j = personas.length-1; j>=0; j--){
+        saludar(personas[j]);
+    }
 }
 
 main();
