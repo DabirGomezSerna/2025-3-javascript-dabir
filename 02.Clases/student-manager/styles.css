@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #f0f4f8, #d9e3ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: #fff;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    color: #2d3e50;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.input-group{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.input-group input{
+    flex: 1;
+    padding: 0.50rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.input-group button{
+    padding: .75rem 1.2rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+}
+
+.input-group button:hover{
+    background-color: #15763e;
+}
+
+#studentList{
+    list-style: none;
+    text-align: left;
+}
+
+#studentList li{
+    display: flex;
+    background-color: #e2e4d8;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.6rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.passed {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.failed {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#averageDisplay{
+    margin-top: 1.3rem;
+}
